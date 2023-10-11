@@ -44,6 +44,7 @@ const HomePage = () => {
         <div>
         <h3 className="mb-3 text-5xl font-bold text-left text-purple-700">E-Chanelling</h3>
         <p className="text-lg opacity-70">Discover a new way to connect with healthcare professionals and book appointments with ease. Whether you're seeking medical advice, dental care, mental health support, or holistic wellness services, our platform connects you with an array of healthcare experts, all from the comfort of your own home.</p>
+        <p className="text-lg opacity-70">Discover a new way to connect with healthcare professionals and book appointments with ease. Whether you're seeking medical advice, dental care, mental health support, or holistic wellness services, our platform connects you with an array of healthcare experts, all from the comfort of your own home.</p>
         </div>
         <div className="flex justify-between gap-5 mt-14" > 
           <div className="w-1/3 ">
