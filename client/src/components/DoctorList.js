@@ -6,7 +6,7 @@ const DoctorList = ({ doctor }) => {
   return (
     <>
       <div
-        className="card m-2"
+        className="m-2 card"
         style={{ cursor: "pointer" }}
         onClick={() => navigate(`/doctor/book-appointment/${doctor._id}`)}
       >
