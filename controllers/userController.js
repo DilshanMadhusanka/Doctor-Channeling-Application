@@ -225,8 +225,10 @@ const bookingAvailabilityController = async (req, res) => {
 };
 
 
+/*
+
 //BOOK APPOINTMENT
-/*const bookAppointmentController = async (req, res) => {
+const bookAppointmentController = async (req, res) => {
   try {
     const date = moment(req.body.date, "DD-MM-YYYY").toISOString();
     const startTime = moment(req.body.time, "HH:mm").toISOString();
@@ -277,7 +279,14 @@ const bookingAvailabilityController = async (req, res) => {
       message: "Error In Booking Appointment",
     });
   }
-};*/
+}
+
+
+
+
+
+*/
+
 
 const bookAppointmentController = async (req, res) => {
   try {
