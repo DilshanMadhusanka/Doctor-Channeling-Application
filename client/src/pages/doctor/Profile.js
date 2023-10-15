@@ -75,7 +75,7 @@ const Profile = () => {
     //eslint-disable-next-line
   }, []);
   return (
-    <Layout>
+    <Layout >
       <h3 align="center">Manage Profile</h3>
       {doctor && (
         <Form
@@ -198,7 +198,7 @@ const Profile = () => {
           </Col>
           <Col xs={24} md={24} lg={8}></Col>
             <Col xs={24} md={24} lg={8}>
-              <button className="btn btn-primary form-btn" type="submit">
+              <button className="btn btn-primary form-btn " type="submit" >
                 Update
               </button>
             </Col>
