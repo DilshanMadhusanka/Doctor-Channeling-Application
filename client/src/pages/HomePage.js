@@ -10,7 +10,7 @@ import Image5 from "../assets/5.jpg"
 import Image6 from "../assets/6.jpg"
 import HeroCard from "../components/HeroCard";
 
-
+import Questions from "../components/Questions";
 
 
 const HomePage = () => {
@@ -86,7 +86,9 @@ const HomePage = () => {
         </div>
 
 
-
+<div>
+  <Questions/>
+</div>
        
         
       </div>
