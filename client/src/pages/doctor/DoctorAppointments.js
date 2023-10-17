@@ -123,7 +123,7 @@ const DoctorAppointments = () => {
   ];
   return (
     <Layout>
-      <h3>Appointments </h3>
+      <h3 className="font-bold text-purple-700 mb-9">Appointments </h3>
       {/* <Table columns={columns} dataSource={appointments} /> */}
       <Row>
         {doctors && doctors.map((doctor) => <DoctorList doctor={doctor} />)}

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { hideLoading, showLoading } from "../../redux/features/alertSlice";
 import Layout from "./../../components/Layout";
+import Image11 from "./../../assets/11.png"
 
 
 const Profile = () => {
@@ -76,7 +77,7 @@ const Profile = () => {
   }, []);
   return (
     <Layout >
-      <h3 align="center">Manage Profile</h3>
+      <h3 className="text-2xl font-bold text-purple-700"   align="center ">Manage Profile</h3>
       {doctor && (
         <Form
           layout="vertical"
@@ -88,7 +89,7 @@ const Profile = () => {
             endtime: moment(doctor.endtime, "HH:mm")
           }}
         >
-          <h4 className="">Personal Details : </h4>
+          <h4 className="font-bold mb-9">Personal Details : </h4>
           <Row gutter={20}>
             <Col xs={24} md={24} lg={8}>
               <Form.Item
@@ -146,7 +147,7 @@ const Profile = () => {
               </Form.Item>
             </Col>
           </Row>
-          <h4>Professional Details :</h4>
+          <h4 className="font-bold mb-9 mt-9">Professional Details :</h4>
           <Row gutter={20}>
             <Col xs={24} md={24} lg={8}>
               <Form.Item
@@ -198,13 +199,17 @@ const Profile = () => {
           </Col>
           <Col xs={24} md={24} lg={8}></Col>
             <Col xs={24} md={24} lg={8}>
-              <button className="btn btn-primary form-btn " type="submit" >
-                Update
-              </button>
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Update</button>
+              
+             
             </Col>
           </Row>
         </Form>
       )}
+
+
+<div className="mt-20"><img src={Image11} alt="banner image" className="w-[2500px] rounded-xl" /></div>
+      
     </Layout>
   );
 };

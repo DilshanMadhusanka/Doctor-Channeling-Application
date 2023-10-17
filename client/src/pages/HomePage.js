@@ -8,6 +8,7 @@ import Image2 from "../assets/3.jpg"
 import Image4 from "../assets/4.jpg"
 import Image5 from "../assets/5.jpg"
 import Image6 from "../assets/6.jpg"
+import Image10 from "../assets/10.png"
 import HeroCard from "../components/HeroCard";
 
 import Questions from "../components/Questions";
@@ -85,8 +86,13 @@ const HomePage = () => {
         <HeroCard imageLink = {Image6}/>
         </div>
 
+<div className="mt-40"><img src={Image10} alt="banner image" className="w-[2500px] " /></div>
+
+<div  className="mt-20 text-2xl font-bold text-left text-purple-700 mb-30">FAQ</div>
+
 
 <div>
+  <Questions/>
   <Questions/>
 </div>
        

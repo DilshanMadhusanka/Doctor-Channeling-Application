@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { hideLoading, showLoading } from "../redux/features/alertSlice";
 import Layout from "./../components/Layout";
+import Image7 from "../assets/7.png"
 
 const ApplyDoctor = () => {
   const { user } = useSelector((state) => state.user);
@@ -47,9 +48,9 @@ const ApplyDoctor = () => {
   
   return (
     <Layout>
-      <h3 className="text-center">Apply Doctor</h3>
+      <h3 className="text-2xl font-bold text-center text-purple-700">Apply Doctor</h3>
       <Form layout="vertical" onFinish={handleFinish} className="m-3">
-        <h4 className="">Personal Details : </h4>
+        <h4 className="font-bold mb-9 mt-9">Personal Details : </h4>
         <Row gutter={20}>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
@@ -108,7 +109,7 @@ const ApplyDoctor = () => {
           </Col>
         </Row>
         <br />
-        <h4>Professional Details :</h4>
+        <h4 className="font-bold mb-9 mt-9">Professional Details :</h4>
         <Row gutter={20}>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
@@ -164,13 +165,20 @@ const ApplyDoctor = () => {
           <Col xs={24} md={24} lg={8}></Col>
           <Col xs={24} md={24} lg={8}>
             <br />
-            <button className="btn btn-primary form-btn" type="submit">
+
+           
+            <button className="bg-blue-700 btn btn-primary form-btn hover:bg-blue-800 " type="submit">
               Submit
             </button>
+
+           
           </Col>
         </Row>
       </Form>
+      <div className="mt-20 "><img src={Image7} alt="banner image" className="w-[2500px] rounded-xl" /></div>
+  
     </Layout>
+    
   );
 };
 
