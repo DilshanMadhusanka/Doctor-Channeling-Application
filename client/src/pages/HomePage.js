@@ -61,7 +61,8 @@ const HomePage = () => {
 
 
           
-          <div className="w-2/3 "><img src={Image1} alt="Hero Image" className="w-[600px] rounded-xl" /></div>
+          <div className="w-2/3 "><img src={Image1} alt="Hero Image" 
+          className="w-[600px] rounded-xl" /></div>
         </div>
 
         
@@ -86,15 +87,15 @@ const HomePage = () => {
         <HeroCard imageLink = {Image6}/>
         </div>
 
-<div className="mt-40"><img src={Image10} alt="banner image" className="w-[2500px] " /></div>
+        <div className="mt-40 "><img src={Image10} alt="banner image" className="w-[2500px] " /></div>
 
-<div  className="mt-20 text-2xl font-bold text-left text-purple-700 mb-30">FAQ</div>
+        <div  className="mt-20 text-2xl font-bold text-left text-purple-700 mb-30">FAQ</div>
 
 
-<div>
-  <Questions/>
-  <Questions/>
-</div>
+        <div>
+           <Questions/>
+           <Questions/>
+        </div>
        
         
       </div>

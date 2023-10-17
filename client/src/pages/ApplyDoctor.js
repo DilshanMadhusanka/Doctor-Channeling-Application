@@ -175,7 +175,8 @@ const ApplyDoctor = () => {
           </Col>
         </Row>
       </Form>
-      <div className="mt-20 "><img src={Image7} alt="banner image" className="w-[2500px] rounded-xl" /></div>
+      <div className="mt-20 "><img src={Image7} alt="banner image"
+       className="w-[2500px] rounded-xl" /></div>
   
     </Layout>
     
