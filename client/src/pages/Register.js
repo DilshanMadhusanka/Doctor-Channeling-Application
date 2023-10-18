@@ -72,11 +72,11 @@ const Register = () => {
           </Form.Item>
           <div className="d-flex justify-content-between">
             <Link to="/login">Already Registered? Click Here to Login</Link>
-            <button className="btn btn-primary" type="submit">Register</button>
+            <button className="bg-blue-800 btn btn-primary" type="submit">Register</button>
           </div>
         </Form>
       </div>
-    </>
+    </> 
   );
 };
 
