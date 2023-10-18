@@ -82,9 +82,9 @@ const HomePage = () => {
         </div>
 
         <div className="flex gap-5 mt-24"> 
-        <HeroCard imageLink = {Image4}/>
-        <HeroCard imageLink = {Image5}/>
-        <HeroCard imageLink = {Image6}/>
+        <HeroCard imageLink = {Image4} title=" Order Medicine" desription=" A Physician specializing on the structures and functions of the endocrine glands and the substances they secrete-hormones. including insulin, thyroxin etc."/>
+        <HeroCard imageLink = {Image5} title="HomeCare " desription="A Gynecologist is a medical specialist who has specialized in the diseases of women & girls, particularly of their female reproductive system. "/>
+        <HeroCard imageLink = {Image6} title="Lab Tests " desription=" An Eye Surgeon is a medical professional who specializes on the surgical intervention & other remedies for the diseases/disorders of the Eye."/>
         </div>
 
         <div className="mt-40 "><img src={Image10} alt="banner image" className="w-[2500px] " /></div>
@@ -93,8 +93,10 @@ const HomePage = () => {
 
 
         <div>
-           <Questions/>
-           <Questions/>
+           <Questions question1="1.What is eChannelling ?" answer1="eChannelling is a service that offers convenient booking facilities for Doctor Appointments at island wide prominent hospitals in Sri Lanka. eChannelling has a network of over 200 hospitals with more than 5,500 doctors around the country."
+            question2 ="2.How to book an appointment with a doctor?" answer2 ="Select the preferred date (required session) of the doctor Enter patient details Select the preferred payment method and proceed. You have maximum of 15 minutes to complete the transaction before expiring the appointment."/>
+            
+           <Questions question1 ="3.What is eChannelling loyalty scheme "answer1 ="A valuable service offered to eChannelling loyal customers via free and premium membership. As an eChannelling user, we provide you with a separate user login to help you use our services with added benefits.You could an easily keep track of all your doctor bookings by completing the registration and having a customer account. Registered users can make bookings and re-bookings at eChannelling faster. Also, when you register, you can enjoy the benefits provided by eChannelling to our regular customers and save money on booking charges." question2 ="4.How to obtain eChannelling membership?"  answer2="A valuable service offered to eChannelling loyal customers via free and premium membership. As an eChannelling user, we provide you with a separate user login to help you use our services with added benefits.You could an easily keep track of all your doctor bookings by completing the registration and having a customer account. Registered users can make bookings and re-bookings at eChannelling faster. Also, when you register, you can enjoy the benefits provided by eChannelling to our regular customers and save money on booking charges."/>
         </div>
        
         

@@ -31,6 +31,7 @@ const Appointments = () => {
     }
   };
 
+
   useEffect(() => {
     getUserData();
   }, []);

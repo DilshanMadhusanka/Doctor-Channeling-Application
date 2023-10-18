@@ -18,9 +18,13 @@ const loginController = async (req, res) => {
     if (!match) {
       return res.status(401).send('Invalid Password');
     }
+
+    //check for the token
     const token = jwt.sign({id: user._id}, process.env.JWT_SECRET,{expiresIn:"1d"},);
     res.status(200).send({ message: "Login Success", success: true, token });
-  } catch (error) {
+  } 
+  //catch the error
+  catch (error) {
     console.log(error);
     console.log(process.env.JWT_SECRET);
     res.status(500).send({ message: `Error in Login CTRL ${error.message}` });
@@ -32,10 +36,12 @@ const registerController = async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
-    // Hash and salt password
+    // Hash the password
     const saltRounds = 10;
     const hashedPassword = await bcrypt.hash(password, saltRounds);
 
+
+    //create a new user model to store in the database
     const newUser = new userModel({
       name,
       email,
@@ -43,6 +49,8 @@ const registerController = async (req, res) => {
     });
     await newUser.save();
 
+
+    //sucess saved user status code :201
     res.status(201).json({
       success: true,
       newUser,
