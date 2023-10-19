@@ -10,7 +10,6 @@ import Image5 from "../assets/5.jpg"
 import Image6 from "../assets/6.jpg"
 import Image10 from "../assets/10.png"
 import HeroCard from "../components/HeroCard";
-
 import Questions from "../components/Questions";
 
 
